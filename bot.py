@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,base64
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="Em9PtrASOyjbGTvplvp5./xXt/LVRVy+b+j5Kq06w1q.CApDCRSFi2SNSrQyDnjqgPAwqEsfN5Q6XuFw6eh3kFk=")
 cl.loginResult()
 
 ki = kk = kc = cl 
@@ -74,7 +74,7 @@ def autolike():
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
             cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"post yang sangat berfaedah...\n\nautolike by Zeon Alfaro http://line.me/ti/p/~raaamyeon")
             #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"jan lupa diadd")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"jan lupa diadd ye, salam damai")
             print "Like"
           except:
             pass
